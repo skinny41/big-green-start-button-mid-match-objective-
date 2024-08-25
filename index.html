@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Countdown Timers</title>
+    <style>
+        /* Center the button on the screen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4; /* Light background color for contrast */
+        }
+
+        .timer-container {
+            margin: 10px;
+            display: none; /* Hide timers initially */
+        }
+        .timer {
+            font-size: 2em;
+            margin: 5px 0;
+        }
+
+        /* Styling for the big green button */
+        #startButton {
+            font-size: 3em; /* Larger font size */
+            padding: 30px 60px; /* Increased padding for a bigger button */
+            background-color: #28a745; /* Green background color */
+            color: white; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            display: inline-block; /* Allow width and padding */
+            text-align: center; /* Center the text */
+        }
+        #startButton:hover {
+            background-color: #218838; /* Slightly darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Centered and larger start button -->
+    <button id="startButton">Start (1 minute until zone forms)</button>
+    
+    <div class="timer-container" id="timerContainer1">
+        <div>Forecast spawns in:</div>
+        <div class="timer" id="timer1">332</div>
+    </div>
+    <div class="timer-container" id="timerContainer2">
+        <div>bunker opens in:</div>
+        <div class="timer" id="timer2">528</div>
+    </div>
+    <div class="timer-container" id="timerContainer3">
+        <div>island spawns in:</div>
+        <div class="timer" id="timer3">719</div>
+    </div>
+
+    <script src="countdowns.js"></script>
+</body>
+</html>
